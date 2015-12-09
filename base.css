@@ -1,0 +1,1531 @@
+body { -webkit-font-smoothing: antialiased; overflow-x:hidden; background-color: #191919; min-width:300px ;}
+
+.ir_wa { display:none }
+.container { }
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.lt-ie8 header, .lt-ie8 section, .lt-ie8 footer, .lt-ie9 header, .lt-ie9 section, .lt-ie9 footer {display:none; }
+
+#main .container {	max-width:1440px; }
+@media only screen and (min-width:768px) {	
+	.container { width:100% }
+}
+@media only screen and (min-width:992px) {
+	.container { width:100% }
+}
+@media only screen and (min-width: 1200px) {
+	.container { width:100% }
+}
+
+@media only screen and (min-width: 1440px) {
+	.container { width:100% }
+}
+
+@media only screen and (min-width: 1920px) {
+	.container { width:1920px }
+}
+
+.container { padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto }
+.misc {	display:none; padding-top:10px; min-height:50px; background-color:black }
+
+/* COMMON */
+
+.color1 { background-color: #2B84D2 }
+.color2 {	background-color: #348883 }
+.color3 { background-color: #E48F83 }
+.color4 {	background-color: #DFAA4B }
+.color5 { background-color: #834FAD }
+.color6 { background-color: #FA8A8A }
+.black { color:#000 }
+.black hgroup h2, .white hgroup h3 { color:#666 }
+.white { color:#FFF }
+.white hgroup h3, .white hgroup p { color:#EAEAEA }
+
+
+.get_it_on { width:222px; height:75px; padding:0px; background-size: 222px 75px; background-repeat: no-repeat; margin-right:8px; margin-bottom:7px; float:left;}
+
+@media only screen and (max-width: 980px) {
+	.get_it_on { width:200px; height:68px; background-size: 200px 68px; clear:both; padding:0px; float:none;}
+}
+
+
+.get_it_on.google {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/GooglePlayButton_white_S.png') }
+.get_it_on.apple {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/AppStoreButton_white_S.png') }
+
+h1.s34 { font-size: 34px }
+h1.s30 { font-size: 30px }
+h1.s26 { font-size: 26px }
+
+/* COMMON END */
+
+/* JUMBOTRON START */
+
+.carousel {	overflow: hidden; position:relative}
+
+.carousel .container { position:relative }
+
+.carousel .underlay {	position: absolute; width:100%}
+.carousel .row { margin-right:0px }
+.carousel .col-sm-6 {	position:relative; padding-left:0; padding-right:0;	}
+
+
+.carousel [name=exclusive] {
+	z-index:10;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+
+.carousel-indicators { float:left }
+
+.carousel .carousel-indicators .active {
+	background-color: white;
+	width:24px;
+	height:24px;
+	margin-bottom:-6px;
+}
+.carousel .carousel-indicators li {
+	background-color: black;
+	border-radius: 20px;
+	vertical-align: bottom;
+	border:1px transparent;
+	cursor:pointer;
+}
+.carousel-control {
+	top:50%;
+	bottom:inherit;
+	filter:none !important;
+}
+.carousel-control .carousel-direction {
+	width:23px;
+	height:52px;
+	display:block;
+	background-color: transparent;
+	top:50%;
+	right:50%;
+	position:absolute;
+	margin-top:-26px;
+	cursor:pointer;
+
+}
+
+.carousel-indicators li { background-color: transparent; width:24px; height:24px; margin:0 7px; margin-bottom:-7px; }
+.carousel-indicators .dotted {	background-color: #000; border-color:#000; }
+.carousel-indicators li.active .dotted {	width:18px; height:18px; margin-top: 2px; margin-left:2px; }
+
+
+@media only screen and (max-width:767px) {	
+	.carousel .carousel-indicators li {
+		margin:auto 3px;
+	}
+	.carousel-control .carousel-direction {
+		top:25%;
+	}
+}
+.carousel-control .carousel-right {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/arrow-right.png'); left:50% }
+.carousel-control .carousel-left {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/arrow-left.png');	right:50% }
+.carousel-control .carousel-right.dark {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/arrow-dark-right.png') }
+.carousel-control .carousel-left.dark {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/arrow-dark-left.png') }
+
+
+@media only screen and (min-width:720px) {
+	.carousel .row { margin-left:0px; margin-right:0% }
+	.carousel [name=exclusive] { margin-left:20% }
+}
+
+@media only screen and (max-width:767px) {	
+	.carousel-control { top:25%; }
+	.carousel [name=exclusive] { margin-left:0px; padding-left:60px }
+}
+@media only screen and (max-width:720px) {
+	.carousel .row { margin-left:5%;	margin-right:5% }
+	.carousel [name=exclusive] { margin-left:0px; padding-left:0px }
+}
+
+.carousel hgroup h1, .carousel hgroup h2, .carousel hgroup h3 {	margin-top: 5px; margin-bottom: 5px }
+.carousel [name=keyvisual] {
+	z-index: 5;
+	position:absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.carousel [name=keyvisual].bottom {
+	z-index: 5;
+	top:inherit;
+	bottom:0;
+	-webkit-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+.carousel hgroup { width:80%; text-align: left}
+.carousel hgroup h1 {
+	display:inline-block;
+	word-break:keep-all;
+	font: 79px 'Open Sans', sans-serif;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 110%;
+	color:#000;
+	/* background: -webkit-linear-gradient(#F90000, #C50000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;	 */
+}
+
+.carousel hgroup h2 {	
+	display:inline-block;
+	word-break:keep-all;
+	font: 65px 'Open Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: -3px;
+	line-height: 110%;
+	color:#000;
+	/* background: -webkit-linear-gradient(#F90000, #C50000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;	 */
+}
+
+.carousel hgroup h3 {	
+	font-family:'Open Sans';
+	font-size:22px;
+	line-height: 125%;
+	padding-left: 5px;
+	letter-spacing: -0.3px;
+	color:#666;
+	margin-bottom: 36px;
+}
+
+.dullred { color:#C54144 !important }
+
+.dotted {	background-color: #D14E1C; width:6px; height:6px; display: block; border-radius:25px; position:relative; display: block; margin: 0 auto; border: 1px solid #D14E1C; margin-top: 7px }
+
+/* JUMBOTRON END */
+
+header {	width:100%;	
+	height:100px;
+	background-color: transparent;
+	position:absolute }
+
+@media only screen and (max-width: 400px) {	
+	header .container { padding-right: 35px; padding-left: 35px }
+}
+@media only screen and (min-width: 401px) {	
+	header .container { padding-right: 45px; padding-left: 45px }
+}
+@media only screen and (min-width: 769px) {	
+	header .container { padding-right: 6.2vw; padding-left: 6.2vw }
+}
+@media only screen and (min-width: 1280px) {	
+	header .container { padding-right: 80px; padding-left: 80px }
+}
+
+header .navbar { z-index:20 }
+header .navbar > .container .navbar-brand {	margin-left: 0px }
+header .navbar-brand { cursor: pointer}
+header .nav > li > a, header .nav > li > a:link, header .nav > li > a:active, header .nav > li > a:visited { background-color: transparent }
+
+header .navbar-toggle { border:none; z-index:500; padding:0px; margin-right:0px; margin-top:5px; border-radius: 0px}
+header .navbar-toggle .icon-bar {	background-color: #E31919; z-index:500; width:25px; height:4px; border-radius: 0px; }
+header .navbar-toggle .icon-bar + .icon-bar { margin-top: 4px }
+
+.fixed { display:block; position: fixed; top:0px; z-index: 9999 }
+
+
+@-webkit-keyframes onload {	0% {-webkit-transform:translate(0px, -100px)}
+	100% {-webkit-transform:translate(0px, 0px)}}
+
+@-moz-keyframes onload {	0% {-moz-transform:translate(0px, -100px)}
+	100% {-moz-transform:translate(0px, 0px)}}
+
+@-ms-keyframes onload{	0% {-ms-transform:translate(0px, -100px)}
+	100% {-ms-transform:translate(0px, 0px)}}
+
+@keyframes onload {	0% {transform:translate(0px, -100px)}
+	100% {transform:translate(0px, 0px)}}
+
+.animated {
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.navbar-animate {	
+	-webkit-animation:onload 1s;
+	-moz-animation:onload 1s;
+	-ms-animation:onload 1s;
+	-o-animation:onload 1s;
+	animation:onload 1s
+}
+
+header .navbar{	margin-bottom:0px; border-radius: 0px; padding-bottom:13px; border:none; }
+header .navbar-header {	margin-top:38px }
+header .navbar-brand {	width:208px; height:59px; padding:0px; background-size: 208px 59px; background-repeat: no-repeat}
+
+.no-backgroundsize header .navbar-brand {
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i1.daumcdn.net/mimg/solstudio/resources/solStudio_r2.png',sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i1.daumcdn.net/mimg/solstudio/resources/solStudio_r2.png',sizingMethod='scale')";
+background-image:none !important;
+}
+header .navbar-brand.red {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/solStudio_r2.png') }
+header .navbar-brand.white {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/solStudio_w2.png') }
+
+header .navbar-text {	font: 48px 'Open Sans', sans-serif;
+	padding:0;
+	margin:0 0 0 0px;
+	float:left;
+	line-height: 170%;
+	letter-spacing: -1px;
+	font-weight: bold;
+	padding:5px 10px 5px 5px;
+	color: #DD0013;
+	color: rgba(221,0,19,0.7) !important }
+
+header .navbar-nav {	margin-top:64px }
+header .navbar-nav i {	letter-spacing: 2px }
+header .navbar-nav>li { font-size:16px; color:#E31919 !important }
+
+
+
+header .menu>li:last-child {  margin-top:-1px; margin-left:5px; padding:0 10px; }
+header .menu>li:last-child a { background-color: transparent; text-transform: capitalize; width:39px;}
+header .menu>li:last-child a:last-child { display:none; }
+header .menu>li:last-child a .arrow-down { border-width:6px; border-top-color: #E31919; display:inline-block; padding-bottom: 2px;}
+header .menu>li:last-child a.en .arrow-down { margin-left:8px}
+header .menu>li:last-child a.ko .arrow-down { margin-left:7px}
+header .menu>li:last-child a.en:before { content: "En" }
+header .menu>li:last-child a.ko:before { content: "Ko" }
+
+header .menu>li:last-child.active { padding:2px 10px 5px 10px; border-radius: 10px; background-color: #F7F7F7}
+header .menu>li:last-child.active a { display:block; width:100%; text-transform: capitalize; text-align: left; line-height: 160%; width:39px; }
+header .menu>li:last-child.active a:last-child { display:block }
+header .menu>li:last-child.active a.selected { color:#BEBEBE;}
+header .menu>li:last-child.active a .arrow-down {border-top-color: #A7A7A7; }
+
+.symbol { position:absolute; left:20px; top:-2px;  display:none; }
+.symbol.solgroup { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/symbol_group.png'); }
+.symbol.solmail { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/symbol_mail.png'); }
+.symbol.solcalendar { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/symbol_calendar.png'); }
+
+.symbol.white.solgroup { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/symbol_group_w.png'); }
+.symbol.white.solmail { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/symbol_mail_w.png'); }
+.symbol.white.solcalendar { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/symbol_calendar_w.png'); }
+
+@media only screen and (min-width: 720px) {
+	.navbar-nav>li { margin:0 10px }
+	header .navbar-nav>li { font-size:14px; }
+	.navbar-nav>li:last-child { padding:0 20px; margin: 0; }
+	.navbar-nav>li:last-child.active { margin-top:-4px !important }
+}
+@media only screen and (min-width: 960px) {	
+	.navbar-nav>li { margin:0 14px }
+	header .navbar-nav>li>a { font-size:15px }
+	.navbar-nav>li:last-child { padding:0 20px; margin: 0 }
+	.navbar-nav>li:last-child.active { margin-top:-5px !important }
+}
+@media only screen and (min-width: 1280px) {
+	.navbar-nav>li { padding:0 20px; margin:0 }
+	.navbar-nav>li:last-child { padding:0 20px; margin: 0 }
+}
+
+@media only screen and (max-width: 767px) { 
+	.symbol { display: block; left:30px; width:30px; height:30px; background-size: 30px 30px;  }
+	header .menu { margin:0 }
+	header .menu li { padding:20px 0; border-top:1px solid; border-top-color: #F0F0F0; }
+	header .menu li a { font-size:16px }
+	header .menu>li:last-child { padding:5px 0; background-color: #F0F0F0; border:none; border-radius: 0; margin:0;}
+	header .menu>li:last-child a { display:inline-block; width:50%; font-size:12px; text-align: center; text-transform: uppercase;}
+	header .menu>li:last-child a:last-child { display:inline-block }
+	header .menu>li:last-child a .arrow-down { display:none } 
+	header .menu>li:last-child a.selected { color:#0D0D0D;}
+	header .menu>li:last-child a { color:#BEBEBE;}
+	header .menu>li:last-child a.selected { color:#0D0D0D;}
+	header .menu>li:last-child a:hover { color:#0D0D0D; }
+	header .menu>li:last-child a.en:before { content: "English" }
+	header .menu>li:last-child a.ko:before { content: "Korean" }
+	
+	header .navbar-header {	margin: 15px 0}
+	header .navbar-brand {	width:160px; height:45px; background-size: 160px 45px; margin-top:7px; }
+	header .navbar-toggle .icon-bar {	margin-top:13px; }
+}
+
+@media only screen and (max-width: 400px) {
+	.symbol { display: block; left:20px; width:25px; height:25px; background-size: 25px 25px; }
+	header .menu li { padding:15px 0; }
+	header .navbar-brand {	width:106px; height:30px; background-size: 106px 30px; margin-top:10px; }
+	header .navbar-header {	margin: 5px 0}
+	header .navbar-toggle .icon-bar {	margin-top:10px; }
+}
+
+
+header .menu { background-color: white }
+
+header .navbar-nav>li>a {	
+	font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Nanum Gothic', 'Gulim';
+	background-color: white;
+	color:#E31919;
+	padding:0px 0px;	
+	cursor:pointer;
+	letter-spacing: -0.6px;
+	text-transform: capitalize;
+	font-weight: 700;
+	text-align: center
+}
+@media only screen and (max-width: 767px) {
+	header .navbar-nav>li>a {	font-weight:600; }
+}
+
+header .navbar-nav>li>a:hover { color:#B01313; background-color: transparent; }
+header .navbar-nav>li>a:hover .arrow-down { border-top-color:#B01313; }
+
+header .navbar-nav>li.blur>a { color:rgba(221, 16, 16, 0.5);}
+header .navbar-nav>li.blur .symbol { opacity: 0.5 }
+header .menu { z-index:20 }
+header .navbar-collapse { border-top:none; }
+header .collapsing { position:absolute; left:0; width:100%; margin:0 !important; padding:0;  }
+header .navbar-collapse.in { position:absolute; left:0; width:100%; margin:0; padding:0; }
+#main .wrap { height:960px }
+#main hgroup, #main hgroup h1, #main hgroup h2 { width:100% }
+
+
+
+
+
+
+/* SOLSTUDIO START */
+/* PRODUCT START */
+
+#solstudio #main hgroup h1, #solstudio #main hgroup h2{	text-transform: uppercase; display:block; }
+#solstudio #main { background-color: white;}
+#solstudio #main .container { overflow:hidden; }
+
+@media only screen and (max-width: 767px) {
+	#solstudio .navbar-nav>li>a { color : #0D0D0D;}
+	#solstudio .navbar-nav>li>a:hover { color : #000;}
+
+
+	#solstudio header .menu>li:last-child a.selected { color: #0D0D0D }	
+	#solstudio header .menu>li:last-child a { color: #BEBEBE }	
+	#solstudio header .menu>li:last-child a:hover { color: #0D0D0D }	
+}
+
+#solstudio #main hgroup h2 { line-height:100% }
+#solstudio #main hgroup h3 { line-height:120%; margin-top:20px;}
+
+@media only screen and (min-width: 720px) {
+	#solstudio #main hgroup h1 { font-size:54px; letter-spacing: -3px }
+	#solstudio #main hgroup h2 { font-size:50px; letter-spacing: -4px }
+	#solstudio #main hgroup h3 { font-size:18px; letter-spacing: -1px }
+	#solstudio #main [name=exclusive] { left:50% }
+	#solstudio #main3 hgroup , #solstudio #main3 hgroup h2 { width:110%; }
+}
+@media only screen and (min-width: 960px) {
+	#solstudio #main hgroup h1 { font-size:58px; letter-spacing: -3px }
+	#solstudio #main hgroup h2 { font-size:66px; letter-spacing: -5px; }
+	#solstudio #main hgroup h3 { font-size:18px; letter-spacing: -1px; padding-right:15% }
+	#solstudio #main [name=exclusive] { left:50% }
+}
+@media only screen and (min-width: 1280px) {	
+	#solstudio #main hgroup h1 { font-size:78px; letter-spacing: -3px }
+	#solstudio #main hgroup h2 { font-size:74px; letter-spacing: -6px; }
+	#solstudio #main hgroup h3 { font-size:20px; letter-spacing: -0.5px;}
+	#solstudio #main3 hgroup h2 { font-size:66px; }
+	#solstudio #main2 hgroup , #solstudio #main2 hgroup h2, #solstudio #main2 hgroup h3 { width:105%; }
+	#solstudio #main [name=exclusive] { left:50% }
+}
+@media only screen and (max-width: 1024px) {
+	#solstudio #main [name=keyvisual].keyVisual_solCalendar { left:26% }
+	#solstudio #main [name=keyvisual].keyVisual_solMail { left:68% }
+	#solstudio #main2 hgroup , #solstudio #main2 hgroup h2, #solstudio #main2 hgroup h3 { width:110%; }
+	#solstudio #main2 hgroup h3 { padding-right:80px;}
+	#solstudio #main [name=keyvisual].keyVisual_solGroup { left:68% }
+}
+@media only screen and (max-width: 767px) {	
+	#solstudio #main .wrap:first-child { height:490px }
+	#solstudio #main .wrap:last-child { height:400px }	
+	#solstudio #main [name=exclusive] { text-align: center; padding-left:0px }
+	#solstudio #main hgroup h3 { font-size:18px; letter-spacing: -1px; padding:0 40px;}
+	#solstudio #main2 hgroup , #solstudio #main2 hgroup h2, #solstudio #main2 hgroup h3 { width:100%; }
+	#solstudio #main3 hgroup , #solstudio #main3 hgroup h2 { width:100%; }
+}
+@media only screen and (max-width: 720px) {	
+	#solstudio #main hgroup h1 { font-size:54px; letter-spacing: -3px }
+	#solstudio #main hgroup h2 { font-size:52px; letter-spacing: -4px }
+}
+@media only screen and (max-width: 510px) {	
+
+	#solstudio #main [name=keyvisual].keyVisual_solCalendar { left:30%; width: 600px; height:512px; background-size: 600px 512px}
+	#solstudio #main [name=keyvisual].keyVisual_solMail { left:50%; width: 378px; height:512px; background-size: 378px 512px}
+	#solstudio #main [name=keyvisual].keyVisual_solGroup { left:50%; width: 379px; height:512px; background-size: 379px 512px}
+	#solstudio #main3 [name=exclusive] { top:60% }
+	#solstudio #main [name=exclusive] { left:50% }
+	#solstudio .review .item { margin-top:50px; z-index: 5}
+
+	#solstudio #main .wrap:first-child { height:420px }
+	#solstudio #main .wrap:last-child { height:350px }
+	#solstudio #main hgroup h1 { font-size:44px; letter-spacing: -2px }
+	#solstudio #main hgroup h2 { font-size:33px; letter-spacing: -3px }
+	#solstudio #main hgroup h3 { font-size:16px; letter-spacing: -1px }
+}
+@media only screen and (max-width: 321px) {	
+	#solstudio #main hgroup h2 { font-size:32px; letter-spacing: -3px }
+	#solstudio #main hgroup h3 { font-size:14px; letter-spacing: -1px }
+}
+
+#solstudio #main .carousel-control.left {	background-image: none; z-index: 10 }
+#solstudio #main .carousel-control.right {	background-image: none; z-index: 10 }
+#solstudio #main .carousel-inner .item { overflow: hidden; }
+
+#solstudio .slick-dots { position:absolute; }
+#solstudio .slick-dots button {	background: #D7182A; border-color:#D7182A; }
+
+#solstudio .carousel-indicators li { background-color: transparent; width:24px; height:24px; margin:0 7px; margin-bottom:-7px;  }
+#solstudio .carousel-indicators .dotted {	background-color: #E41919; border-color:#E41919; }
+#solstudio .carousel-indicators li.active .dotted {	width:18px; height:18px; background-color: #E41919; margin-top: 2px; margin-left:2px; border-color:#E41919 }
+
+
+#solstudio .get_it_on { width:263px; height:88px; background-size: 263px 88px; margin-right:10px; margin-bottom: 10px; }
+#solstudio .get_it_on.google {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/GooglePlayButton_black_L.png') }
+#solstudio .get_it_on.apple {	background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/AppStoreButton_black_L.png') }
+
+@media only screen and (max-width: 767px) {
+	#solstudio .get_it_on { display:inline-block;width:222px; height:74px; background-size: 222px 74px; margin:0 auto; margin-bottom:10px; margin-right:5px;}
+}
+@media only screen and (max-width: 500px) {
+	#solstudio .get_it_on { display:block; margin:0 auto; margin-bottom:8px; }
+}
+
+#product { background-color: #FFF; padding:0px }
+#product .row {	margin:0px }
+#product .col-md-3 { text-align: center }
+#product .service_desc { top:59% }
+#product .service-box { height:18.75vw; max-height: 360px; cursor:pointer; }
+
+@media only screen and (max-width: 1024px) {
+	#product .service-box { height:37vw }
+}
+
+@media only screen and (max-width: 960px) {	
+	#product .service-box { height:37vw; max-height: 320px }
+}
+
+@media only screen and (max-width:767px) {	
+	#product .col-sm-4 { width:100% }
+	#product .service-box { background-size: cover !important; background-position: center; height:150vh; max-height: 360px;  }
+	#product .service_desc p { font-size:14px }
+	#product .service_desc h2 { font-size:24px }
+}
+
+@media only screen and (max-width:480px) {	
+	#product .col-sm-4 { width:100% }
+	#product .service-box {	ackground-size: cover !important; background-position: center; height:75vh; max-height: 240px; }
+}
+
+@media only screen and (min-width:721px) {
+	#product .service-box {	background-size: cover !important; background-position: center;	}
+	#product .service_desc p { font-size:14px }
+	#product .service_desc h2 { font-size:24px }
+}
+
+@media only screen and (min-width: 961px) {
+	#product .service-box { background-size: cover !important; background-position: center }
+
+}
+@media only screen and (min-width: 1281px) {
+	#product .service-box { background-size: cover !important; background-position: center }
+	#product .container { min-width:1280px; width:100% }
+}
+
+@media only screen and (min-width: 1920px) {	
+	#product .service-box { height:360px !important }
+	#product .service_desc p { font-size:18px }
+	#product .service_desc h2 { font-size:34px }
+}
+
+#product .service_desc p {
+	font-family: 'Open Sans';
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #FFFFF0
+}
+#product h2 {	
+	margin:0 auto;
+	color:white;
+	font-weight:500;
+	letter-spacing: -1.3px;
+  font-family: 'Open Sans', "Apple SD Gothic Neo", sans-serif;
+}
+
+#product .service-box {	position:relative;
+	padding-left:0;
+	padding-right:0;
+	min-height:64px;
+	background-position: center !important}
+
+#product .service-box.solmail {	background: url('http://i1.daumcdn.net/mimg/solstudio/resources/element_mail2.png') }
+#product .service-box.solcalendar {	background: url('http://i1.daumcdn.net/mimg/solstudio/resources/element_calendar2.png') }
+#product .service-box.solgroup {	background: url('http://i1.daumcdn.net/mimg/solstudio/resources/element_group2.png') }
+#product .service-box.solmessenger {	background: url('http://i1.daumcdn.net/mimg/solstudio/resources/element_messenger2.png'); cursor:help; }
+
+#product .service_desc { position:absolute; text-align: center; width:100%; margin: 0 auto; cursor:pointer }
+#product .service_desc hr {	width:60% }
+
+#product a.btn { border-color:#D21F1F }
+#product a.btn:hover { background-color: #D21F1F; color:white}
+
+/* PRODUCT END */
+
+/* COUNT START */
+
+#count {	position: relative; margin-top: 100px }
+#count .overlay {	position: absolute;	width:50%; height:100% }
+#count h2 {	
+	text-align: center;
+	margin-left:55px;
+	padding:20px 0 0 0;
+	font:38px 'Apple SD Gothic Neo', 'Nanum Gothic', 'Gulim', sans-serif;
+	letter-spacing: -2px;
+	font-weight: 600;
+	color:#AAA}
+
+#count h3 {	
+	text-align: center;
+	margin-left:55px;
+	padding:20px 0 0 0;
+	font:32px 'Apple SD Gothic Neo', 'Nanum Gothic', 'Gulim', sans-serif;
+	letter-spacing: -2px;
+	font-weight: 600;
+	color:#AAA}
+
+#count strong {	color:#DD0013; }
+
+#count hgroup {	margin:0 auto; text-align: center}
+#count hgroup .counter{	font:60px 'Open Sans'; font-weight: 200; color: #333; letter-spacing: 1px; margin:0 auto; padding: 0 }
+#count hgroup .counter p small{	color:#EAEAEA }
+#count hgroup p { font:16px 'Apple SD Gothic Neo', 'Nanum Gothic', 'Gulim'; color: #999; letter-spacing: -1px; margin-top:-5px; padding: 0 }
+
+#count div.icons { margin-top:50px; text-align:center }
+#count .icons p.counter {	font:30px 'Open Sans', 'Open Sans'; font-weight: 200; color: #333; letter-spacing: 1px; margin:0 auto; padding: 0}
+#count div.col-md-4 {	text-align:center }
+#count div.col-md-4 hr { width:60% }
+#count i { color: #ED5753 }
+
+/* COUNT END */
+
+/* SOLMAIL */
+
+#solmail header .navbar-toggle {	border-color: white }
+#solmail header .navbar-toggle .icon-bar {	background-color: white }
+
+#solmail header .menu { background-color: transparent; }
+#solmail header .navbar-nav>li>a { color:rgba(255, 255, 255, 0.5); background-color: transparent;}
+#solmail header .navbar-nav>li>a .arrow-down { border-top-color:rgba(190, 190, 190, 0.5);}
+#solmail header .navbar-nav>li>a .symbol { opacity: 0.5 }
+#solmail header .menu>li.active a { color:white }
+#solmail header .menu>li.active a .arrow-down { border-top-color:white }
+#solmail header .menu>li.active a .symbol { opacity: 1.0 }
+#solmail header .menu>li:hover a { color:white }
+#solmail header .menu>li:hover a .arrow-down { border-top-color:white }
+#solmail header .menu>li:hover a .symbol { opacity: 1.0 }
+
+
+#solmail header .menu>li:last-child.active { background-color: #3A3A3A}
+#solmail header .menu>li:last-child.active a.selected { color:#BEBEBE;}
+#solmail header .menu>li:last-child.active a .arrow-down { border-top-color:#BEBEBE }
+
+@media only screen and (max-width: 767px) {
+	#solmail header .container.in { background-color: rgba(0,0,0,0.9) }
+	#solmail header .menu { background-color: rgba(0,0,0,0.9) }
+	#solmail header .menu li { border-top-color: rgba(50,50,50,0.8)}
+	#solmail header .menu>li:last-child { background-color: rgba(15,15,15,0.8) }
+	#solmail header .menu>li:last-child a.selected { color: #FFF }	
+}
+
+#solmail #main { background-color: transparent }
+
+#solmail #main hgroup {	width:100% }
+#solmail #main hgroup h1 { color:white; text-transform: uppercase}
+#solmail #main hgroup h2 { color:white; text-transform: uppercase }
+#solmail #main hgroup h3 { color:#FFFFF0; padding:0;}
+
+#solmail .carousel-indicators { position:absolute; bottom:-90px; margin-left: 0%; left:0%; width:100%; text-align: left}
+#solmail .carousel-indicators li { background-color: transparent; width:24px; height:24px; margin:0 7px; margin-bottom:-7px;  }
+#solmail .carousel-indicators .dotted {	background-color: #FFF; border-color:#FFF; width:4px; height:4px; }
+#solmail .carousel-indicators li.active .dotted {	width:18px; height:18px; background-color: #FFF; margin-top: 0px; margin-left:4px; border-color:#FFF }
+#solmail #main .carousel-indicators li:first-child { margin-left:-3px }
+#solmail #main .carousel-control.left {	background-image: none; z-index: 10 }
+#solmail #main .carousel-control.right { background-image: none; z-index: 10 }
+#solmail #main .wrap { height:695px }
+
+#solmail .item { background-color: #F9F9F9  }
+#solmail .underlay { background-color: #191919; position:absolute; width:100%; width:inherit; height:645px; background-size:cover; z-index: 1; background-position: center center;}
+
+
+#solmail .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_01.png'); }
+#solmail .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_02.png'); }
+#solmail .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_03.png'); }
+#solmail .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_04.png'); }
+#solmail .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_05.png'); }
+#solmail .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_06.png'); }
+#solmail .main7 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_07.png'); }
+
+#solmail .main1 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_01.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solmail .main2 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_02.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solmail .main3 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_03.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solmail .main4 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_04.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solmail .main5 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_05.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solmail .main6 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_06.png'); width:894px; height:551px; background-size: 894px 551px; }
+#solmail .main7 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_07.png'); width:354px; height:551px; background-size: 354px 551px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {	
+	#solmail .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_01_rtn.png'); }
+	#solmail .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_02_rtn.png'); }
+	#solmail .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_03_rtn.png'); }
+	#solmail .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_04_rtn.png'); }
+	#solmail .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_05_rtn.png'); }
+	#solmail .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_06_rtn.png'); }
+	#solmail .main7 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_07_rtn.png'); }
+
+	#solmail .main1 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_01_rtn.png'); width:354px; height:551px; background-size: 354px 551px; }
+	#solmail .main2 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_02_rtn.png'); width:354px; height:551px; background-size: 354px 551px; }
+	#solmail .main3 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_03_rtn.png'); width:354px; height:551px; background-size: 354px 551px; }
+	#solmail .main4 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_04_rtn.png'); width:354px; height:551px; background-size: 354px 551px; }
+	#solmail .main5 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_05_rtn.png'); width:354px; height:551px; background-size: 354px 551px; }
+	#solmail .main6 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_06_rtn.png'); width:894px; height:551px; background-size: 894px 551px; }
+	#solmail .main7 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_screenShot_mail_07_rtn.png'); width:354px; height:551px; background-size: 354px 551px; }
+}
+
+
+@media only screen and (max-width: 767px) {	
+	#solmail .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_01_v.png'); }
+	#solmail .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_02_v.png'); }
+	#solmail .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_03_v.png'); }
+	#solmail .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_04_v.png'); }
+	#solmail .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_05_v.png'); }
+	#solmail .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_06_v.png'); }
+	#solmail .main7 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_07_v.png'); }
+}
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {	
+	#solmail .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_01_rtn.png')}
+	#solmail .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_02_rtn.png')}
+	#solmail .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_03_rtn.png')}
+	#solmail .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_04_rtn.png')}
+	#solmail .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_05_rtn.png')}		
+	#solmail .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_06_rtn.png')}		
+	#solmail .main7 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/mail/_sub_keyvisual_mail_v_07_rtn.png')}		
+}
+
+
+#solmail #main hgroup { width: 100% }
+#solmail #main hgroup h1 { font-size:64px; letter-spacing: -5px; line-height:100% }
+#solmail #main hgroup h3 { font-size:18px; letter-spacing: -0.5px; line-height:120%; margin-top:20px;}
+
+@media only screen and (min-width: 720px) {
+	#solmail #main .carousel-control.left {	margin-left: -35px }
+	#solmail #main .carousel-control.right {	right: -35px }
+	#solmail .carousel-indicators li { margin:0 4px; }
+	#solmail .main1 hgroup , #solmail .main1 hgroup h1 { width:110%; }
+	#solmail .main2 hgroup , #solmail .main2 hgroup h1 { width:110%; }
+	#solmail .main5 hgroup , #solmail .main5 hgroup h1 { width:110%; }
+
+	#solmail #main hgroup h1 { font-size:39px; letter-spacing: -4px}
+	#solmail .main5 hgroup h1 { font-size:37px; }
+	#solmail #main hgroup h3 { font-size:15px; }
+	
+}
+@media only screen and (min-width: 768px) {
+	#solmail #main [name=exclusive] { left:45%; padding-right:10px; }	
+	#solmail #main [name=keyvisual] { left:55% }
+	#solmail #main .main6 .device_sc { left:112% }
+	#solmail .carousel-indicators li { margin:0 4px; }
+
+}
+@media only screen and (min-width: 830px) {
+	#solmail #main .main6 .device_sc { left:92% }
+	#solmail #main hgroup h1 { letter-spacing: -3px}
+	#solmail #main hgroup h3 { font-size:16px; padding-right:0;}
+}
+@media only screen and (min-width: 960px) {
+	#solmail #main .main6 .device_sc { left:88% }
+	#solmail #main [name=exclusive] { left:55%; padding-right:0px; }
+	#solmail .main1 hgroup , #solmail .main1 hgroup h1 { width:110%; }
+	#solmail .main2 hgroup , #solmail .main2 hgroup h1 { width:105%; }
+	#solmail .main5 hgroup , #solmail .main5 hgroup h1 { width:110%; }
+
+	#solmail #main hgroup h1 { font-size:53px; letter-spacing: -5px}
+	#solmail .main5 hgroup h1 { font-size:50px; }
+	#solmail #main hgroup h3 { font-size:16px; padding-right:20%;}
+	
+}
+@media only screen and (min-width: 1280px) {	
+	#solmail #main .main6 .device_sc { left:70% }
+	#solmail #main [name=exclusive] { left:55% }
+
+}
+
+@media only screen and (max-width: 767px) {	
+	#solmail #main .wrap:first-child { height:480px }
+	#solmail #main .wrap:last-child { height:560px }	
+	#solmail .underlay { height:990px;}
+	#solmail .item { background-size: cover }
+
+	#solmail #main [name=exclusive] { margin-top:0px; padding:0px 30px; text-align: center }
+	#solmail #main [name=keyvisual].bottom { position:absolute; left:50%; -webkit-transform: translate(-50%, 0%); -ms-transform: translate(-50%, 0%); transform: translate(-50%, 0%); }
+
+	#solmail #main .carousel-indicators { text-align: center; margin-bottom:48px;}
+	#solmail #main .main6 .device_sc { background-size: cover; background-position: left top; width: 120%; }
+
+	#solmail #main hgroup h1, #solmail #main hgroup h2, #solmail #main hgroup h3 { width:100%; text-align: center; }
+	
+	#solmail #main hgroup h1 { font-size:52px; letter-spacing: -4px}
+	#solmail #main hgroup h3 { font-size:16px; letter-spacing: -1px; padding:0 40px;}
+
+	#solmail .get_it_on { display:inline-block;}
+}
+
+@media only screen and (max-width: 720px) {	
+	#solmail #main .wrap:first-child { height:430px }
+	#solmail #main .wrap:last-child { height:560px }
+	
+	#solmail .main5 hgroup h1 { font-size: 50px }
+	#solmail #main [name=exclusive] { left:50%; padding:0px }
+	#solmail #main .wrap { height:500px }
+	#solmail .underlay { height:930px;}
+}
+
+@media only screen and (max-width: 620px) {	
+	#solmail #main hgroup h1 { font-size:40px;}
+}
+
+@media only screen and (max-width: 480px) {
+	#solmail #main .carousel-indicators li { margin: 0 3px }
+	#solmail #main .carousel-indicators { margin-bottom:28px;}
+	#solmail #main hgroup h1 { font-size:31px; letter-spacing: -3px}
+	#solmail #main hgroup h3 { font-size:15px; padding:0 30px; }
+	#solmail .main2 hgroup h1 { font-size:31px; }
+	#solmail .main3 hgroup h3 { font-size:14px; }
+	#solmail .main5 hgroup h1 { font-size:29px; }
+}
+
+@media only screen and (max-width: 320px) {
+	#solmail #main hgroup h1 { font-size:28px}
+	#solmail .main5 hgroup h1 { font-size:27px}
+	#solmail #main hgroup h3 { font-size:14px;}
+}
+
+#solmail section.placeholder {	height:55px; background-color: #F9F9F9 }
+
+#solmail .press { padding:20px 10px 0px 10px; margin:0 auto;}
+
+#solmail .press { display: block; list-style: none; padding-top:5px;}
+#solmail .press .logo { float : left; text-align: center; padding:20px; }
+#solmail .press .logo .arrow-up { position:absolute; bottom:0px; left:50%; border-bottom-color:#005B8B; display:none} 
+#solmail .press .logo .banner { height: 80px; margin-top:20px; cursor:pointer; display:inline-block; padding:0 10px;}
+#solmail .press .logo .banner img { max-width: 210px; max-height: 80px;}
+#solmail .press .press_review { background-color: #005B8B; padding:60px; border-radius: 20px; margin:0 20px;}
+
+#solmail .review {	position:relative; padding-bottom:30px; background-color:#F9F9F9; border-bottom: 1px solid #EEEEEE }
+#solmail .review h2 > a { color: #666; }
+#solmail .review h1 {
+	font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; 
+	font-size: 28px;
+	text-align: center;
+	font-weight: 300;
+	line-height: 120%;
+	color: #000;
+	letter-spacing: -1px;
+	margin: 10px 0px;
+	padding:0 30px;
+
+}
+
+#solmail .review h2 {
+	font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; 
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	line-height: 120%;
+	color: #666;
+	letter-spacing: -1px;
+	margin-top:30px
+}
+
+#solmail .review hr {	width:15%; margin-bottom:10px }
+#solmail .review .item { min-height:150px }
+
+#solmail .review #solcalendar_review { margin-top:0px }
+
+#solmail .review .carousel-indicators {	position:relative; bottom:0; left:0; width:100%; margin:0; padding:0; z-index:0; text-align: center; padding-top:0px; padding-bottom:15px; }
+#solmail .review .carousel-indicators .active {	width:20px; height:20px; background-color: #D7182A; margin-bottom: 0px }
+#solmail .review .carousel-indicators .dotted {	background-color: #D7182A; border-color:#D7182A; }
+#solmail .review .carousel-indicators li.active .dotted {	background-color: transparent; border-color:transparent;}
+#solmail .review .carousel-indicators li { background-color: transparent; width:20px; height:20px; margin:0px 10px;  }
+#solmail .review .carousel-control.left {	background-image: none }
+#solmail .review .carousel-control.right { background-image: none }
+
+
+@media only screen and (max-width: 767px) {	
+	#solmail .review h1 { font-size:24px; letter-spacing: -1px }
+	#solmail .review h2 { font-size:14px; letter-spacing: -1px }
+
+	#solmail .review .slick-dots li { margin: 0 5px;  }
+	#solmail .review .slick-dots li.slick-active button { width:16px; height:16px }
+}
+
+@media only screen and (max-width: 720px) {
+	#solmail .review .item { margin-top:50px}
+}
+
+@media only screen and (max-width: 400px) {
+	#solmail .review .carousel-indicators li { margin: 0 1px }
+	#solmail .review .carousel-indicators .active { width:12px; height:12px; margin:0 5px; margin-bottom: 5px }
+}
+
+
+
+#solmail .videoclip {	max-height:1080px; background-color: black }
+#solmail .videoclip iframe {	display: block; margin: 0 auto }
+#solmail .videoclip .player {	padding:0px; max-height:1080px; max-width:1920px; width:100% }
+
+#solmail #function .row { margin-left : 5%;}
+@media only screen and (max-width: 991px) {
+	#solmail #function .row { margin-left : -15px}
+}
+#solmail #function { background-color: white; padding:30px 15px 100px 15px; text-align: center; }
+
+#solmail #function .col-md-3 {  padding-left:5%; padding-bottom:50px;}
+#solmail #function .circle-box { text-align: left; padding:5px 0 0 5px; }
+
+#solmail #function .fa.fa-facebook-square { color : #4862A3; }
+#solmail #function .fa.fa-twitter-square { color : #00ACEE; }
+#solmail #function .fa.fa-pencil { color : #4862A3; }
+#solmail #function .box { cursor:pointer; }
+#solmail #function .service_desc { text-align: left; }
+#solmail #function .box:hover i.fa.fa-facebook-square { color:#3A4E82 }
+#solmail #function .box:hover i.fa.fa-twitter-square { color:#266999 }
+#solmail #function .box:hover i.fa.fa-pencil { color:#3A4E82 }
+#solmail #function .service_desc hr { width:80%; margin:5px 0; }
+#solmail #function .service_desc p { font:16px 'Open Sans'; color: #505050;	letter-spacing: 0px; margin-top:6px; font-weight: 300; line-height: 120%; }
+#solmail #function h2 { margin:20px 0 0px 0; font-family:'Open Sans'; font-size:24px; color:#000; }
+#solmail #function h3 { margin:0; font-family:'Open Sans'; font-size:14px; color:#9A9A9A; } 
+
+/* SOLMAIL END */
+
+/* SOLCALENDAR START */
+
+#solcalendar header .navbar-toggle {	border-color: white }
+#solcalendar header .navbar-toggle .icon-bar {	background-color: white }
+
+
+
+#solcalendar header .menu { background-color: transparent; }
+#solcalendar header .navbar-nav>li>a { color:rgba(255, 255, 255, 0.5); background-color: transparent;}
+#solcalendar header .navbar-nav>li>a .arrow-down { border-top-color:rgba(190, 190, 190, 0.5);}
+#solcalendar header .navbar-nav>li>a .symbol { opacity: 0.5 }
+#solcalendar header .menu>li.active a { color:white }
+#solcalendar header .menu>li.active a .arrow-down { border-top-color:white }
+#solcalendar header .menu>li.active a .symbol { opacity: 1.0 }
+#solcalendar header .menu>li:hover a { color:white }
+#solcalendar header .menu>li:hover a .arrow-down { border-top-color:white }
+#solcalendar header .menu>li:hover a .symbol { opacity: 1.0 }
+#solcalendar header .menu>li:last-child.active { background-color: #3A3A3A}
+#solcalendar header .menu>li:last-child.active a.selected { color:#BEBEBE;}
+#solcalendar header .menu>li:last-child.active a .arrow-down { border-top-color:#BEBEBE }
+
+@media only screen and (max-width: 767px) {
+	
+	#solcalendar header .container.in { background-color: rgba(0,0,0,0.9) }
+	#solcalendar header .menu { background-color: rgba(0,0,0,0.9) }
+	#solcalendar header .menu li { border-top-color: rgba(50,50,50,0.8) }
+	#solcalendar header .menu>li:last-child { background-color: rgba(15,15,15,0.8) }
+	#solcalendar header .menu>li:last-child a.selected { color: #FFF }
+	
+	
+}
+
+#solcalendar #main hgroup {	width:100% }
+#solcalendar #main hgroup h1 { color:white; text-transform: uppercase; }
+#solcalendar #main hgroup h1 strong { text-transform: uppercase }
+#solcalendar #main hgroup h2 { color:white }
+#solcalendar #main hgroup h3 { color:#FFFFF0; padding:0;}
+
+#solcalendar #main [name=keyvisual].bottom { margin-bottom: -55px }
+
+
+#solcalendar .carousel-indicators { position:absolute; bottom:-80px; margin-left: 0%; left:0%; width:100%; text-align: left}
+#solcalendar .carousel-indicators li { background-color: transparent; width:24px; height:24px; margin:0 7px; margin-bottom:-7px;  }
+#solcalendar .carousel-indicators .dotted {	background-color: #FFF; border-color:#FFF; width:4px; height:4px; }
+#solcalendar .carousel-indicators li.active .dotted {	width:18px; height:18px; background-color: #FFF; margin-top: 0px; margin-left:4px; border-color:#FFF }
+#solcalendar #main .carousel-indicators li:first-child { margin-left:-3px }
+#solcalendar #main .carousel-control.left {	background-image: none; z-index: 10 }
+#solcalendar #main .carousel-control.right { background-image: none; z-index: 10 }
+#solcalendar #main .carousel-indicators li:first-child { margin-left:-3px }
+#solcalendar #main .carousel-control.left {	background-image: none; z-index: 10 }
+#solcalendar #main .carousel-control.right { background-image: none; z-index: 10 }
+
+#solcalendar .item { background-color:transparent; background-repeat: repeat-x; background-position: center center;	
+    background-repeat: no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+#solcalendar .main1 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_01.png');}
+#solcalendar .main2 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_02.png');}
+#solcalendar .main3 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_03.png'); }
+#solcalendar .main4 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_04.png'); }
+#solcalendar .main5 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_05.png'); }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {	
+	#solcalendar .main1 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_01_rtn.png')}
+	#solcalendar .main2 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_02_rtn.png')}
+	#solcalendar .main3 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_03_rtn.png')}
+	#solcalendar .main4 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_04_rtn.png')}
+	#solcalendar .main5 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_05_rtn.png')}		
+}
+#solcalendar #main .wrap { height:640px }
+
+#solcalendar #main hgroup h1 { font-size:64px; letter-spacing: -5px; line-height:100% }
+#solcalendar #main hgroup h3 { font-size:16px; letter-spacing: -0.5px; line-height:120%; margin-top:20px;}
+
+@media only screen and (min-width: 720px) {
+	#solcalendar #main [name=exclusive] { left:50%; }
+	#solcalendar #main .wrap { height:640px }
+	#solcalendar #main .carousel-indicators { margin-left:0px; padding-top:50px; padding-bottom:0}
+	#solcalendar #main .carousel-control.left {	margin-left: -35px }
+	#solcalendar #main .carousel-control.right {	right: -35px }
+
+	#solcalendar #main hgroup h1 { font-size:39px; letter-spacing: -4px }
+	#solcalendar #main hgroup h3 { font-size:15px; }
+}
+@media only screen and (min-width:768px) {
+	#solcalendar #main .item { background-position: -650px }
+}
+@media only screen and (min-width: 960px) {
+	#solcalendar #main [name=exclusive] { left:55%; margin-left:20%;}
+	#solcalendar #main .carousel-indicators { margin-left:0px;}
+	#solcalendar #main .item { background-position: center }
+
+	#solcalendar #main hgroup h1 { font-size:53px; letter-spacing: -3px }
+	#solcalendar #main hgroup h3 { font-size:16px; padding-right:20% }
+	
+}
+@media only screen and (min-width: 1280px) {	
+	#solcalendar #main [name=exclusive] { left:55% }
+
+	#solcalendar #main hgroup h1 { font-size:64px; letter-spacing: -5px }
+	#solcalendar #main hgroup h3 { font-size:16px; letter-spacing: -0.5px }
+}
+
+@media only screen and (max-width: 767px) {	
+	
+	#solcalendar #main { background-position: -700px 0px }
+	#solcalendar #main .wrap { height:1040px }
+	#solcalendar #main .carousel-indicators { position:relative; bottom:-10px; margin:0 auto; padding-top:25px; padding-bottom:25px; text-align: center}
+	#solcalendar #main [name=exclusive] { padding:0px 40px; margin-top:0; top:110px; left:0%; -webkit-transform: translate(0, 0); -ms-transform: translate(0%, 0); transform: translate(0%, 0%); text-align: center}
+
+	#solcalendar .main1 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_01.png')}
+	#solcalendar .main2 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_02.png')}
+	#solcalendar .main3 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_03.png')}
+	#solcalendar .main4 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_04.png')}
+	#solcalendar .main5 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_05.png')}		
+
+	#solcalendar #main hgroup h1, #solcalendar #main hgroup h2, #solcalendar #main hgroup h3 { width:100%; text-align: center; }
+	#solcalendar #main hgroup h1 { font-size:52px; letter-spacing: -4px }
+	#solcalendar #main hgroup h3 { font-size:16px; letter-spacing: -1px; padding:0 40px;}
+
+	#solcalendar .get_it_on { display:inline-block;}
+}
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {	
+	#solcalendar .main1 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_01_rtn.png')}
+	#solcalendar .main2 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_02_rtn.png')}
+	#solcalendar .main3 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_03_rtn.png')}
+	#solcalendar .main4 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_04_rtn.png')}
+	#solcalendar .main5 { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/calendar/_sub_keyvisual_calendar_v_05_rtn.png')}		
+}
+@media only screen and (max-width: 720px) {	
+	#solcalendar #main .wrap { height:990px }
+	#solcalendar #main [name=exclusive] { padding:0px 10px; }
+	#solcalendar #main .carousel-indicators { margin:0 auto; padding-top:25px; padding-bottom:25px}
+	
+}
+
+@media only screen and (max-width: 620px) {	
+	#solcalendar #main hgroup h1 { font-size:40px;}
+	#solcalendar #main .carousel-indicators { bottom:10px }
+}
+
+@media only screen and (max-width: 480px) {
+	#solcalendar #main .carousel-indicators li { margin: 0 3px; }
+	
+	#solcalendar #main hgroup h1 { font-size:32px; letter-spacing: -3px}
+	#solcalendar #main hgroup h3 { font-size:15px; padding:0 30px; }
+}
+
+@media only screen and (max-width: 400px) {
+	#solcalendar #main4 h3 { content : "123";}
+
+}
+#solcalendar .review {	position:relative; padding-bottom:30px; background-color:#F9F9F9; border-bottom: 1px solid #EEEEEE }
+#solcalendar .review h2 > a { color: #666; }
+
+#solcalendar .review h1 {	font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; font-size: 28px; text-align: center; font-weight: 300; line-height: 120%; color: #000; letter-spacing: -1px; margin: 10px 0px; padding:0 30px; }
+#solcalendar .review h2 { font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; font-size: 20px; font-weight: 300; text-align: center; line-height: 120%; color: #666; letter-spacing: -1px; margin-top:30px }
+
+#solcalendar .review .item { min-height:150px }
+#solcalendar .review #solcalendar_review { margin-top:0px }
+
+#solcalendar .review .carousel-indicators {	position:relative; bottom:0; left:0; width:100%; margin:0; padding:0; z-index:0; text-align: center; padding-top:0px; padding-bottom:15px }
+#solcalendar .review .carousel-indicators .active {	width:20px; height:20px; background-color: #D7182A; margin-bottom: 0px }
+#solcalendar .review .carousel-indicators .dotted {	background-color: #D7182A; border-color:#D7182A; }
+#solcalendar .review .carousel-indicators li.active .dotted {	background-color: transparent; border-color:transparent;}
+#solcalendar .review .carousel-indicators li { background-color: transparent; width:20px; height:20px; margin:0px 10px;  }
+#solcalendar .review .carousel-control.left {	background-image: none }
+#solcalendar .review .carousel-control.right { background-image: none }
+
+
+
+@media only screen and (max-width: 767px) {	
+	#solcalendar .review h1 { font-size:24px; letter-spacing: -1px }
+	#solcalendar .review h2 { font-size:14px; letter-spacing: -1px }
+
+	#solcalendar .review .slick-dots li { margin: 0 5px;  }
+	#solcalendar .review .slick-dots li.slick-active button { width:16px; height:16px }
+}
+
+@media only screen and (max-width: 720px) {
+	#solcalendar .review .item { margin-top:50px}
+}
+@media only screen and (max-width: 400px) {
+	#solcalendar .review .carousel-indicators li { margin: 0 1px }
+	#solcalendar .review .carousel-indicators .active { width:12px; height:12px; margin:0 5px; margin-bottom: 5px }
+}
+
+
+#solcalendar .videoclip {	max-height:1080px; background-color: black }
+#solcalendar .videoclip iframe {	display: block; margin: 0 auto }
+#solcalendar .videoclip .player {	padding:0px; max-height:1080px; max-width:1920px; width:100% }
+
+#solcalendar .press { padding:20px 10px 0px 10px; margin:0 auto;}
+
+#solcalendar .press { display: block; list-style: none; padding-top:60px;}
+#solcalendar .press .logo { float : left; text-align: center; padding:20px; }
+#solcalendar .press .logo .arrow-up { position:absolute; bottom:0px; left:50%; border-bottom-color:#005B8B; display:none} 
+#solcalendar .press .logo .banner { height: 80px; margin-top:20px; cursor:pointer; display:inline-block; padding:0 10px;}
+#solcalendar .press .logo .banner img { max-width: 210px; max-height: 80px;}
+#solcalendar .press .press_review { background-color: #005B8B; padding:60px; border-radius: 20px; margin:0 20px;}
+
+
+#solcalendar #function { background-color: white; padding:100px 0px 80px 0px; text-align: center; }
+#solcalendar #function .row { margin-left:0px; margin-right:0px }
+
+#solcalendar #function .col-md-3 {  padding-left:3%; padding-bottom:50px;}
+@media only screen and (max-width: 991px) {
+	#solcalendar #function .col-md-3 { padding-left:5%; }
+}
+
+#solcalendar #function .circle-box { text-align: left; padding:5px 0 0 5px; }
+
+#solcalendar #function .fa { color : #C82B29; }
+#solcalendar #function .box { cursor:pointer; }
+#solcalendar #function .service_desc { text-align: left; padding-right:15px;}
+#solcalendar #function .box:hover i { color:#B01313 }
+#solcalendar #function .service_desc hr { width:80%; margin:5px 0; }
+#solcalendar #function .service_desc p { font:16px 'Open Sans'; color: #505050;	letter-spacing: 0px; margin-top:6px; font-weight: 300; line-height: 120%; }
+#solcalendar #function h2 { margin:20px 0 0px 0; font-family:'Open Sans'; font-size:24px; color:#000; }
+#solcalendar #function h3 { margin:0; font-family:'Open Sans'; font-size:14px; color:#9A9A9A; } 
+
+.korean hgroup h1, .korean hgroup h2, .korean hgroup h3, .korean p, .korean .service_desc p, .korean .service_desc h2  { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Nanum Gothic', 'Gulim', 'Open Sans' !important  } 
+.korean h1, .korean h2 { line-height: 110% !important;  }
+
+/* SOLCALENDAR END */
+
+/* SOLGROUP START */
+
+#solgroup header .navbar-toggle {	border-color: white }
+#solgroup header .navbar-toggle .icon-bar {	background-color: white }
+
+#solgroup header .menu { background-color: transparent; }
+#solgroup header .navbar-nav>li>a { color:rgba(255, 255, 255, 0.5); background-color: transparent;}
+#solgroup header .navbar-nav>li>a .arrow-down { border-top-color:rgba(190, 190, 190, 0.5);}
+#solgroup header .navbar-nav>li>a .symbol { opacity: 0.5 }
+#solgroup header .menu>li.active a { color:white }
+#solgroup header .menu>li.active a .arrow-down { border-top-color:white }
+#solgroup header .menu>li.active a .symbol { opacity: 1.0 }
+#solgroup header .menu>li:hover a { color:white }
+#solgroup header .menu>li:hover a .arrow-down { border-top-color:white }
+#solgroup header .menu>li:hover a .symbol { opacity: 1.0 }
+#solgroup header .menu>li:last-child.active { background-color: #3A3A3A}
+#solgroup header .menu>li:last-child.active a.selected { color:#BEBEBE;}
+#solgroup header .menu>li:last-child.active a .arrow-down { border-top-color:#BEBEBE }
+
+@media only screen and (max-width: 767px) {
+	#solgroup header .container.in { background-color: rgba(0,0,0,0.9) }
+	#solgroup header .menu { background-color: rgba(0,0,0,0.9) }
+	#solgroup header .menu li { border-top-color: rgba(50,50,50,0.8) }
+	#solgroup header .menu>li:last-child { border-top:1px solid rgba(50,50,50,0.8);background-color: rgba(15,15,15,0.8) }
+	#solgroup header .menu>li:last-child a.selected { color: #FFF }	
+}
+
+#solgroup #main { background-color: #F9F9F9 }
+
+#solgroup #main hgroup {	width:100% }
+#solgroup #main hgroup h1 { color:white; text-transform: uppercase; }
+#solgroup #main hgroup h2 { color:white; text-transform: uppercase }
+#solgroup #main hgroup h3 { color:#FFFFF0; padding:0;}
+
+#solgroup .carousel-indicators { position:absolute; bottom:-80px; margin-left: 0%; left:0%; width:100%; text-align: left}
+#solgroup .carousel-indicators li { background-color: transparent; width:24px; height:24px; margin:0 7px; margin-bottom:-7px;  }
+
+#solgroup .carousel-indicators .dotted {	background-color: #FFF; border-color:#FFF; width:4px; height:4px; }
+#solgroup .carousel-indicators li.active .dotted {	width:18px; height:18px; background-color: #FFF; margin-top: 0px; margin-left:4px; border-color:#FFF }
+
+#solgroup #main .carousel-indicators li:first-child { margin-left:-3px }
+#solgroup #main .carousel-control.left {	background-image: none; z-index: 10 }
+#solgroup #main .carousel-control.right { background-image: none; z-index: 10 }
+#solgroup #main .wrap { height:695px }
+
+#solgroup .item { background-color: #F9F9F9  }
+#solgroup .underlay { position:absolute; width:100%; width:inherit; height:645px; background-size:cover; background-color: #FFF; z-index: 1; background-position: center center; }
+
+#solgroup .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_01.png'); }
+#solgroup .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_022.png'); }
+#solgroup .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_03.png'); }
+#solgroup .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_04.png'); }
+#solgroup .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_05.png'); }
+#solgroup .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_06.png'); }
+
+#solgroup .main1 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_01.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solgroup .main2 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_02.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solgroup .main3 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_03.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solgroup .main4 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_04.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solgroup .main5 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_05.png'); width:354px; height:551px; background-size: 354px 551px; }
+#solgroup .main6 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_06.png'); width:354px; height:551px; background-size: 354px 551px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {	
+	#solgroup .main1 .underlay{ background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_01_rtn.png')}
+	#solgroup .main2 .underlay{ background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_02_rtn2.png')}
+	#solgroup .main3 .underlay{ background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_03_rtn.png')}
+	#solgroup .main4 .underlay{ background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_04_rtn.png')}
+	#solgroup .main5 .underlay{ background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_05_rtn.png')}
+	#solgroup .main6 .underlay{ background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_06_rtn.png')}
+
+	#solgroup .main1 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_01_rtn.png'); }
+	#solgroup .main2 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_02_rtn.png'); }
+	#solgroup .main3 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_03_rtn.png'); }
+	#solgroup .main4 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_04_rtn.png'); }
+	#solgroup .main5 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_05_rtn.png'); }
+	#solgroup .main6 .device_sc { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_screenShot_group_06_rtn.png'); }
+}
+
+#solgroup .device_sc { background-repeat: no-repeat; background-position: center; z-index: 3;}
+
+#solgroup #main hgroup h1 { font-size:64px; letter-spacing: -5px; line-height:100% }
+#solgroup #main hgroup h3 { font-size:16px; letter-spacing: -0.5px; line-height:120%; margin-top:20px;}
+
+@media only screen and (min-width: 720px) {
+	#solgroup #main .carousel-control.left {	margin-left: -35px }
+	#solgroup #main .carousel-control.right {	right: -35px }
+
+	#solgroup #main hgroup h1 { font-size:39px; letter-spacing: -4px }
+	#solgroup #main hgroup h3 { font-size:15px; }
+}
+@media only screen and (min-width: 768px) {
+	#solgroup #main .carousel-indicators { text-align: left; padding-top:50px; padding-bottom:0}
+	#solgroup #main [name=exclusive] { left:45%; padding-right:10px; }
+	#solgroup #main [name=keyvisual] { left:55% }
+}
+
+@media only screen and (min-width: 960px) {
+	#solgroup #main [name=exclusive] { left:55% }
+	#solgroup #main hgroup { width: 100%}	
+
+	#solgroup #main hgroup h1 { font-size:53px; letter-spacing: -3px }
+	#solgroup #main hgroup h3 { font-size:16px; padding-right:20% }
+}
+@media only screen and (min-width: 1280px) {	
+	#solgroup #main [name=exclusive] { left:55% }
+
+	#solgroup #main hgroup h1 { font-size:64px; letter-spacing: -5px }
+	#solgroup #main hgroup h3 { font-size:16px; letter-spacing: -0.5px }
+}
+
+@media only screen and (max-width: 767px) {	
+
+	#solgroup .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_01_v.png')}
+	#solgroup .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_02_v2.png')}
+	#solgroup .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_03_v.png')}
+	#solgroup .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_04_v.png')}
+	#solgroup .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_05_v.png')}	
+	#solgroup .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_06_v.png')}	
+
+	#solgroup #main .wrap:first-child { height:480px }
+	#solgroup #main .wrap:last-child { height:560px }	
+	#solgroup .underlay { height:990px;}
+	#solgroup .item { background-size: cover }
+	
+	#solgroup #main [name=exclusive] { margin-top:0px; padding:0px 30px; text-align: center }
+	#solgroup #main [name=keyvisual].bottom { position:absolute; left:50%; -webkit-transform: translate(-50%, 0%); -ms-transform: translate(-50%, 0%); transform: translate(-50%, 0%); }
+
+	#solgroup #main .carousel-indicators { text-align: center; margin-bottom:20px;}
+
+	#solgroup #main hgroup h1, #solcalendar #main hgroup h2, #solcalendar #main hgroup h3 { width:100%; text-align: center; }
+	#solgroup #main hgroup h1 { font-size:52px; letter-spacing: -4px }
+	#solgroup #main hgroup h3 { font-size:16px; letter-spacing: -1px; padding:0 40px;}
+
+	#solgroup .get_it_on { display:inline-block;}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {	
+	#solgroup .main1 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_v_01_rtn.png')}
+	#solgroup .main2 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_v_02_rtn2.png')}
+	#solgroup .main3 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_v_03_rtn.png')}
+	#solgroup .main4 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_v_04_rtn.png')}
+	#solgroup .main5 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_v_05_rtn.png')}	
+	#solgroup .main6 .underlay { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/group/_sub_keyvisual_group_v_06_rtn.png')}	
+}
+
+
+@media only screen and (max-width: 720px) {	
+	#solgroup #main .wrap:first-child { height:430px }
+	#solgroup #main .wrap:last-child { height:560px }
+	#solgroup #main [name=exclusive] { left:50%; padding:0px }
+	#solgroup #main .wrap { height:500px }
+	#solgroup .underlay { height:930px;}
+}
+
+@media only screen and (max-width: 620px) {	
+	#solgroup #main hgroup h1 { font-size:40px;}
+}
+
+@media only screen and (max-width: 480px) {
+	#solgroup #main .carousel-indicators { margin-bottom: 30px}
+	#solgroup #main .carousel-indicators li { margin: 0 1px }
+
+
+	#solgroup #main hgroup h1 { font-size:32px; letter-spacing: -3px}
+	#solgroup #main hgroup h3 { font-size:15px; padding:0 10px; margin-bottom: 20px	 }
+}
+
+#solgroup section.placeholder {	height:55px; background-color: #F9F9F9; }
+
+#solgroup .press { padding:20px 10px 0px 10px; margin:0 auto;}
+
+#solgroup .press { display: block; list-style: none; padding-top:5px;}
+#solgroup .press .logo { float : left; text-align: center; padding:20px; }
+#solgroup .press .logo .arrow-up { position:absolute; bottom:0px; left:50%; border-bottom-color:#005B8B; display:none} 
+#solgroup .press .logo .banner { height: 80px; margin-top:20px; cursor:pointer; display:inline-block; padding:0 10px;}
+#solgroup .press .logo .banner img { max-width: 210px; max-height: 80px;}
+#solgroup .press .press_review { background-color: #005B8B; padding:60px; border-radius: 20px; margin:0 20px;}
+
+#solgroup .review {	position:relative; padding-bottom:30px; background-color:#F9F9F9; border-bottom: 1px solid #EEEEEE }
+#solgroup .review h2 > a { color: #666; }
+#solgroup .review h1 { font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; font-size: 28px; text-align: center; font-weight: 300; line-height: 120%; color: #000; letter-spacing: -1px; margin: 10px 0px; padding:0 30px; }
+#solgroup .review h2 { font-family: 'Open Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; font-size: 20px; font-weight: 300; text-align: center; line-height: 120%; color: #666; letter-spacing: -1px; margin-top:30px }
+
+#solgroup .review .item { min-height:150px;  }
+#solgroup #solgroup_review .carousel-inner { cursor : pointer }
+
+#solgroup .review #solgroup_review { margin-top:0px }
+
+#solgroup .review .carousel-indicators {	position:relative; bottom:0; left:0; width:100%; margin:0; padding:0; z-index:0; text-align: center; padding-top:50px; padding-bottom:15px; }
+#solgroup .review .carousel-indicators .active {	width:20px; height:20px; background-color: #D7182A; margin-bottom: 0px }
+#solgroup .review .carousel-indicators .dotted {	background-color: #D7182A; border-color:#D7182A; }
+#solgroup .review .carousel-indicators li.active .dotted {	background-color: transparent; border-color:transparent;}
+#solgroup .review .carousel-indicators li { background-color: transparent; width:20px; height:20px; margin:0px 10px;  }
+#solgroup .review .carousel-control.left {	background-image: none }
+#solgroup .review .carousel-control.right { background-image: none }
+
+@media only screen and (max-width: 767px) {	
+	#solgroup .review h1 { font-size:24px; letter-spacing: -1px }
+	#solgroup .review h2 { font-size:14px; letter-spacing: -1px }
+}
+
+@media only screen and (max-width: 720px) {
+	#solgroup .review .item { margin-top:50px}
+	#solgroup .review .carousel-indicators li { margin: 0 5px;  }
+	#solgroup .review .carousel-indicators .active { margin-bottom: 1px }
+}
+@media only screen and (max-width: 400px) {
+	#solgroup .review h1 { padding:0 }
+	#solgroup section.placeholder { height:55px;}
+	#solgroup .review .carousel-indicators li { margin: 0 1px; width:16px; height:16px;  }
+	#solgroup .review .carousel-indicators .active { width:12px; height:12px; margin:0 5px; margin-bottom: 1px }
+
+}
+
+#solgroup .videoclip {	max-height:1080px; background-color: black }
+#solgroup .videoclip iframe {	display: block; margin: 0 auto }
+#solgroup .videoclip .player {	padding:0px; max-height:1080px; max-width:1920px; width:100% }
+
+@media only screen and (max-width: 991px) {
+	#solgroup section.placeholder { height:35px;}
+	#solgroup .review #solgroup_review { margin-top:30px }
+	#solgroup .col-sm-9 {
+		width:100%;
+	}
+}
+
+
+#solgroup .function .fa { color : #4862A3; }
+#solgroup .function.box { padding-left:5%; cursor:pointer; }
+#solgroup .function.box:hover i { color:#3A4E82 }
+#solgroup .function .service_desc { text-align: left; }
+#solgroup .function .box:hover i { color:#3A4E82 }
+#solgroup .function .service_desc hr { width:80%; margin:5px 0; }
+#solgroup .function .service_desc p { font:16px 'Open Sans'; color: #505050;	letter-spacing: 0px; margin-top:6px; font-weight: 300; line-height: 120%; }
+#solgroup .function h2 { margin:20px 0 0px 0; font-family:'Open Sans'; font-size:24px; color:#000; text-align: left}
+#solgroup .function h3 { margin:0; font-family:'Open Sans'; font-size:14px; color:#9A9A9A; } 
+/* SOLGROUP END */
+
+
+/* PRESS END */
+
+
+/* CONTACT START */
+
+
+
+
+/* CONTACT END */
+
+/* FOOTER START */
+footer .navbar { margin-top:30px; }
+footer .navbar-nav { margin:0;}
+footer .navbar-right { padding-right:80px; }
+footer .navbar-nav.navbar-right:last-child { margin-right:0px;}
+footer .navbar-left { padding-left:80px; }
+
+footer .navbar-nav>li:first-child { padding-left:0px}
+footer .navbar-nav>li:last-child { padding-right:0px}
+footer .navbar-left>li { padding:0 20px; margin:0; }
+
+@media only screen and (max-width: 767px) {	
+	footer .navbar-left { padding-left:0px; }
+	footer .navbar-right { padding-right:0px; }
+	footer .navbar-left>li { padding:0 }
+}
+
+
+footer .container {	margin:0 auto;}
+footer .navbar-inverse { border:none }
+
+
+footer .navbar-nav>li>a {	font:15px 'Open Sans', 'Apple SD Gothic Neo', 'Nanum Gothic', 'Gulim'; line-height: 240%; color:#505050 !important; padding:0px 0px;	cursor:pointer; letter-spacing: -0.2px; text-align: center; }
+footer .navbar-right>li>a { cursor:auto }
+footer a {	color:#505050 }
+footer a:hover {color:#505050; background-color:#191919 !important }
+footer a:focus {color:#505050; background-color:#191919 !important }
+footer .fa-facebook {	color:#505050 }
+footer .fa-twitter { color:#505050 }
+footer .fa-facebook:hover {	color:#4862A3 }
+footer .fa-twitter:hover { color:#00ACEE }
+footer .terms .tit_article { display: block; padding-bottom: 18px; font-size: 16px; color: #333; }
+footer .terms .tit_view { display: block; padding-bottom: 4px; font-size: 13px; color: #747047; }
+footer .terms .tit_div { border:1px solid #ccc; padding:10px; margin:10px; border-collapse: collapse;}
+footer .terms .tit_div td, th { border:1px solid #ccc; padding:5px;}
+
+.reveal-modal-bg { position: fixed; height: 100%; width: 100%; background: #000; background: rgba(0,0,0,.8); z-index: 150; display: none; top: 0; left: 0; }
+.reveal-modal { visibility: hidden; top: 50%; left: 50%; width: 70%; height:60%; background: #eee url(http://i1.daumcdn.net/mimg/solstudio/resources/modal-gloss.png) no-repeat -200px -80px; position: absolute; z-index: 300; padding: 30px 40px 34px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4); -box-shadow: 0 0 10px rgba(0,0,0,.4); }
+.reveal-modal.small { width: 200px; margin-left: -140px;}
+.reveal-modal.medium {width: 400px; margin-left: -240px;}
+.reveal-modal.large { width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge { width: 800px; margin-left: -440px;}
+.reveal-modal .close-reveal-modal {	font-size: 100px; line-height: .5; position: absolute; top: -55px; right: -50px; color: #aaa;	text-shadow: 0 -1px 1px rbga(0,0,0,.6);	font-weight: lighter;	cursor: pointer; }
+.reveal-modal .close-reveal-modal:hover {	opacity: 0.5;		text-decoration: none;	}
+.reveal-modal .terms { width: 100%; height:100%; overflow: scroll; overflow-x: hidden;	}
+
+/* FOOTER END */
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Since positioning the image, we need to help out the caption */
+
+/* MISC START */
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid white;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	border-bottom: 10px solid white;
+}
+
+.keyVisual_solCalendar { width:946px; height:808px; background: url('http://i1.daumcdn.net/mimg/solstudio/resources/keyvisual_calendar_hf2.png') center no-repeat;	background-position: 0px 0px; background-size: 946px 808px; top:58%; left:22%;}
+.keyVisual_solMail { width:598px; height:809px; background: url('http://i1.daumcdn.net/mimg/solstudio/resources/keyvisual_mail_hf2.png') center no-repeat;	background-position: 0px 0px; background-size: 598px 809px; top:60%; left:50%;}
+.keyVisual_solGroup { width:599px; height:809px; background: url('http://i1.daumcdn.net/mimg/solstudio/resources/keyvisual_group_hf2.png') center no-repeat;	background-position: 0px 0px; background-size: 599px 809px; top:60%; left:50%;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+	.keyVisual_solCalendar { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/keyvisual_calendar2.png');}
+	.keyVisual_solMail { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/keyvisual_mail2.png'); }
+	.keyVisual_solGroup { background-image: url('http://i1.daumcdn.net/mimg/solstudio/resources/keyvisual_group2.png'); }
+}
+
+.dimmed_layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: #000;
+	filter: alpha(Opacity=60);
+	opacity: 0.6;
+}
+
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.slick-track { position: relative; left: 0; top: 0; display: block; zoom: 1; }
+.slick-track:before, .slick-track:after { content: ""; display: table; }
+.slick-track:after { clear: both; }
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
+.slick-slide img { display: block; }
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+.slick-initialized .slick-slide { display: block; }
+.slick-loading .slick-slide { visibility: hidden; }
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+
+/* Arrows */
+.slick-prev, .slick-next { 	width:23px;
+	height:52px;
+	display:block;
+	background-color: transparent;
+	top:50%;
+	right:50%;
+	position:absolute;
+	margin-top:-26px;}
+.slick-prev:focus, .slick-next:focus { outline: none; }
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
+
+
+.tit_article { display: block; padding-bottom: 18px; font-size: 16px; color: #333; }
+.tit_view { display: block; padding-bottom: 4px; font-size: 13px; color: #747047; }
+.tit_div { border:1px solid #ccc; padding:10px; margin:10px; border-collapse: collapse;}
+.tit_div td, th { border:1px solid #ccc; padding:5px;}

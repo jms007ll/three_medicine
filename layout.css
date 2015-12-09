@@ -1,0 +1,8 @@
+body { font-family:Verdana; font-size:14px; margin:0;}
+
+#container {margin:0 auto; width:100%;}
+#header { height:450px; background:#9c6;text-align:center;}
+#mainContent { height:193px;}
+#sidebar { float:left; width:400px; height:195px; background:#D9855C; text-align:center;}
+#sidebar2 { float:right; width:400px; height:195px; background:#8A9544;text-align:center;}
+#sidebar3 {  height:195px; background:#DF954D;text-align:center;}
